@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar Project</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <!-- Top Bar -->
+      <div class="header__top-bar">
+        <!-- Left -->
+        <div class="header__month-navigation">
+          <button id="prevBtn">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <div class="header__monthYear" id="monthYear"></div>
+
+          <button id="nextBtn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Right -->
+        <button class="header__today-button" id="toDayBtn">Today</button>
+      </div>
+
+      <!-- View Switcher -->
+      <div class="header__view-switcher">
+        <button class="header__view-button active">Month</button>
+
+        <button class="header__view-button">Week</button>
+
+        <button class="header__view-button">Day</button>
+      </div>
+    </header>
+
+    <!-- Body Calendar -->
+    <main class="calendar">
+      <div class="calendar__weekdays">
+        <div class="calendar__weekday">T2</div>
+        <div class="calendar__weekday">T3</div>
+        <div class="calendar__weekday">T4</div>
+        <div class="calendar__weekday">T5</div>
+        <div class="calendar__weekday">T6</div>
+        <div class="calendar__weekday">T7</div>
+        <div class="calendar__weekday">CN</div>
+      </div>
+
+      <div class="calendar__dates" id="dates"></div>
+    </main>
+  </body>
+
+  <script src="js/index.js"></script>
+</html>

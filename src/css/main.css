@@ -1,0 +1,43 @@
+@import 'theme.css';
+@import 'sections/header.css';
+@import 'sections/calendar.css';
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: var(--p-font-size);
+  line-height: var(--p-line-height);
+  letter-spacing: var(--p-letter-spacing);
+  font-family: system-ui, sans-serif;
+
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  background-color: white;
+  &:hover {
+    background: var(--main-gradient-color);
+    color: white;
+  }
+}
+
+button.active {
+  background: var(--main-gradient-color);
+  color: white;
+}
+
+button.inactive {
+  color: gray;
+  background: white;
+  cursor: unset;
+}

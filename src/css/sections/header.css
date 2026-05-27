@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__month-navigation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  & .header__monthYear {
+    font-weight: bold;
+  }
+}
+
+.header__view-switcher {
+  display: flex;
+  gap: 5px;
+}
