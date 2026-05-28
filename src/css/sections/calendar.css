@@ -1,20 +1,133 @@
-.calendar__weekdays {
+.month-view,
+.week-view,
+.day-view {
+  display: none;
+}
+
+.month-view.active {
+  display: block;
+}
+
+.week-view.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.day-view.active {
+  display: block;
+}
+
+/* Month View */
+
+.month-view__weekdays {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   place-items: center;
-  padding: 10px 0;
+  place-items: center;
+
+  & .month-view__weekday {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
 }
 
-.calendar__dates {
+.month-view__dates {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   place-items: center;
   gap: 5px;
+  padding: 10px 0;
 }
 
-.calendar__date {
+.month-view__date {
   text-align: center;
   font-weight: 600;
   width: 40px;
   height: 40px;
+  background: transparent;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    transform 0.2s;
+}
+
+.month-view__date.inactive {
+  opacity: 0.3;
+  background: white;
+  pointer-events: none;
+  cursor: default;
+}
+
+.month-view__date.has-schedule {
+  display: flex;
+  flex-direction: column;
+}
+
+.dot-more {
+  opacity: 0.3;
+}
+
+/* Week View */
+.week-view {
+  gap: 10px;
+  & .week-view__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 32px;
+    border: 2px dashed gray;
+    & .Button {
+      display: flex;
+    }
+  }
+}
+
+.week-view__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.week-view__day {
+  display: flex;
+  gap: 10px;
+  border-bottom: 2px dashed gray;
+  /* align-items: center; */
+  align-items: stretch;
+  padding: 10px 0;
+  border-radius: 8px;
+
+  & .week-view__date {
+    display: flex;
+    gap: 10px;
+  }
+
+  & .week-view__timeLine {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+  }
+}
+
+.week-view__day.end-day {
+  border: none;
+}
+
+.week-view__date {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-width: 40px;
+  border-right: 2px solid gray;
 }

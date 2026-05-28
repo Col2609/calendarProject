@@ -10,9 +10,7 @@
   line-height: var(--p-line-height);
   letter-spacing: var(--p-letter-spacing);
   font-family: system-ui, sans-serif;
-
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 button {
@@ -23,11 +21,14 @@ button {
   border-radius: 8px;
   border: none;
   cursor: pointer;
-
   background-color: white;
   &:hover {
     background: var(--main-gradient-color);
     color: white;
+    transition:
+      background 0.2s,
+      color 0.2s,
+      transform 0.2s;
   }
 }
 
@@ -36,8 +37,40 @@ button.active {
   color: white;
 }
 
-button.inactive {
-  color: gray;
-  background: white;
-  cursor: unset;
+.frame,
+footer {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+footer {
+  justify-content: start;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover,
+.btn.active {
+  background: var(--main-gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.week-view__day:hover {
+  background: var(--main-gradient-color);
+  color: white;
+  cursor: pointer;
+
+  transition:
+    background 0.2s,
+    color 0.2s,
+    transform 0.2s;
+
+  & .week-view__date {
+    border-right-color: white;
+  }
 }
