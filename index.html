@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar Project</title>
+
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navite Window Frame -->
+    <div class="frame">
+      <div class="btn active">
+        <i class="fa-solid fa-thumbtack"></i>
+      </div>
+      <div class="btn">
+        <i class="fa-solid fa-times-circle"></i>
+      </div>
+    </div>
+    <!-- HEADER -->
+    <header class="header">
+      <!-- Top Bar -->
+      <div class="header__top-bar">
+        <!-- Left -->
+        <div class="header__month-navigation">
+          <button id="prevBtn">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <div class="header__monthYear" id="monthYear"></div>
+
+          <button id="nextBtn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Right -->
+        <button class="header__today-button" id="toDayBtn">Today</button>
+      </div>
+
+      <!-- View Switcher -->
+      <div class="header__view-switcher">
+        <button class="header__view-button" id="monthBtn">Month</button>
+
+        <button class="header__view-button active" id="weekBtn">Week</button>
+
+        <button class="header__view-button" id="dayBtn">Day</button>
+      </div>
+    </header>
+
+    <!-- Body Calendar -->
+    <main class="calendar">
+      <section class="month-view" id="monthView">
+        <div class="month-view__weekdays">
+          <div class="month-view__weekday">T2</div>
+          <div class="month-view__weekday">T3</div>
+          <div class="month-view__weekday">T4</div>
+          <div class="month-view__weekday">T5</div>
+          <div class="month-view__weekday">T6</div>
+          <div class="month-view__weekday">T7</div>
+          <div class="month-view__weekday">CN</div>
+        </div>
+
+        <div class="month-view__dates" id="monthViewDates"></div>
+      </section>
+
+      <section class="week-view active" id="weekView">
+        <div class="week-view__header" id="weekViewHeader">
+          <span>27/04 - 03/04</span>
+          <div class="Button">
+            <button id="prevWeekBtn">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button id="nextWeekBtn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="week-view__list" id="weekViewList">
+          <!-- Day 1 -->
+          <div class="week-view__day">
+            <div class="week-view__date">
+              <span class="day">T2</span>
+              <span class="date">27</span>
+            </div>
+
+            <div class="week-view__timeLine">
+              <div class="schedule-item">
+                <span class="time">06:30 - 09:30</span>
+
+                <span class="subject">AI</span>
+              </div>
+
+              <div class="schedule-item">
+                <span class="time">06:30 - 09:30</span>
+
+                <span class="subject">AI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="day-view" id="dayView"></section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="btn">
+        <i class="fa-solid fa-circle-question"></i>
+      </div>
+
+      <div class="btn">
+        <i class="fa-solid fa-gear"></i>
+      </div>
+    </footer>
+  </body>
+
+  <script src="src/js/index.js"></script>
+</html>
