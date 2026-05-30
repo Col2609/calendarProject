@@ -1,7 +1,15 @@
+.calendar {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
 .month-view,
 .week-view,
 .day-view {
   display: none;
+  height: 100%;
 }
 
 .month-view.active {
@@ -73,20 +81,6 @@
 /* Week View */
 .week-view {
   gap: 10px;
-  & .week-view__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    text-align: center;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 32px;
-    border: 2px dashed gray;
-    & .Button {
-      display: flex;
-    }
-  }
 }
 
 .week-view__list {
@@ -95,14 +89,13 @@
 }
 
 .week-view__day {
+  font-size: 12px;
+
   display: flex;
   gap: 10px;
-  border-bottom: 2px dashed gray;
-  /* align-items: center; */
   align-items: stretch;
   padding: 10px 0;
   border-radius: 8px;
-
   & .week-view__date {
     display: flex;
     gap: 10px;
@@ -115,19 +108,69 @@
 
     gap: 8px;
   }
+
+  & .schedule-item {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  & .schedule-item .time {
+    font-size: 12px;
+    opacity: 0.7;
+    white-space: nowrap;
+  }
+
+  & .schedule-item .subject {
+    font-size: 13px;
+    font-weight: 500;
+
+    /* cho phép wrap nếu tên dài */
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
 }
 
-.week-view__day.end-day {
-  border: none;
+.week-view__day.empty {
+  & .week-view__date {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .week-view__date {
   font-weight: bold;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   min-width: 40px;
   border-right: 2px solid gray;
+
+  & .day {
+    opacity: 0.5;
+  }
+}
+
+.day-view__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.day-view__group {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.day-view__content .schedule-item {
+  & .schedule-item__title {
+    font-weight: bold;
+    opacity: 0.5;
+  }
 }

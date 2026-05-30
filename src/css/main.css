@@ -13,6 +13,24 @@
   padding: 10px;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.frame,
+.header,
+footer {
+  flex-shrink: 0;
+}
+
 button {
   display: flex;
   align-items: center;
@@ -42,6 +60,7 @@ footer {
   display: flex;
   justify-content: end;
   gap: 10px;
+  -webkit-app-region: drag;
 }
 
 footer {
@@ -51,6 +70,7 @@ footer {
 .btn {
   cursor: pointer;
   font-size: 16px;
+  -webkit-app-region: no-drag;
 }
 
 .btn:hover,
@@ -60,7 +80,8 @@ footer {
   -webkit-text-fill-color: transparent;
 }
 
-.week-view__day:hover {
+.week-view__day:hover,
+.week-view__day.active {
   background: var(--main-gradient-color);
   color: white;
   cursor: pointer;
@@ -72,5 +93,67 @@ footer {
 
   & .week-view__date {
     border-right-color: white;
+  }
+}
+
+.week-view__divider {
+  height: 1px;
+
+  margin: 4px 0;
+  flex-shrink: 0;
+  background-image: repeating-linear-gradient(to right, gray 0px, gray 6px, transparent 6px, transparent 12px);
+}
+
+.calendar::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* track */
+.calendar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* thumb */
+.calendar::-webkit-scrollbar-thumb {
+  background: var(--gradient-color);
+
+  border-radius: 10px;
+}
+
+/* hover */
+.calendar::-webkit-scrollbar-thumb:hover {
+  background: var(--main-gradient-color);
+}
+
+.day-view__title {
+  min-width: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  background: var(--main-gradient-color);
+  border-radius: 8px;
+}
+
+.day-view__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+
+  & .schedule-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  & .schedule-item:hover,
+  .schedule-item.active {
+    color: white;
+    background: var(--gradient-color);
   }
 }

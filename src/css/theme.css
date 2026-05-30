@@ -165,7 +165,7 @@ table {
 
   /* Gradients */
   --main-gradient-color: linear-gradient(to right, var(--p-450), var(--p-500));
-  --gradient-color: linear-gradient(var(--foreground-color) 10%, var(--p-100));
+  --gradient-color: linear-gradient(to left, var(--p-400), var(--p-450));
 
   /*================================= 
         FONTS -  Sử dụng Scale 1.125
