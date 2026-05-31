@@ -144,6 +144,8 @@ ipcMain.handle('window:pin', (_, isPinned) => {
   if (!win) return;
 
   win.setMovable(!isPinned);
+  win.setSkipTaskbar(isPinned);
+  win.setAlwaysOnTop(isPinned);
 });
 
 ipcMain.handle('auth:login', async () => {
