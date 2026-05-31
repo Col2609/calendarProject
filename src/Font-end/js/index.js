@@ -475,7 +475,7 @@ function renderDayView(targetDateObj = currentDate) {
               </div>
               ${match.ghiChu ? `<div class="schedule-item__notes">${match.ghiChu}</div>` : ''}
             `
-            : 'Không có môn học!'
+            : '<div style="font-size:12px">Không có lịch học</div>'
         }
       </div>
     `;
