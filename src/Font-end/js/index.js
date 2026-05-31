@@ -15,280 +15,11 @@ const monthNames = [
 
 //Data
 
-const scheduleMonth = [
-  {
-    date: '15/05/2026',
-    total: 1,
-    subjects: [
-      {
-        name: 'Trí tuệ nhân tạo',
-        nameToDisplay: 'Trí tuệ nhân tạo',
-        color: '#F5A623',
-      },
-    ],
-  },
-  {
-    date: '30/05/2026',
-    total: 1,
-    subjects: [
-      {
-        name: 'Xử lý ảnh và thị giác máy tính',
-        nameToDisplay: 'Xử lý ảnh và thị giác máy tính',
-        color: '#4A90E2',
-      },
-    ],
-  },
-  {
-    date: '29/05/2026',
-    total: 1,
-    subjects: [
-      {
-        name: 'Trí tuệ nhân tạo',
-        nameToDisplay: 'Trí tuệ nhân tạo',
-        color: '#F5A623',
-      },
-    ],
-  },
-  {
-    date: '28/05/2026',
-    total: 1,
-    subjects: [
-      {
-        name: 'Lịch sử Đảng cộng sản Việt Nam',
-        nameToDisplay: 'Lịch sử Đảng cộng sản Việt Nam',
-        color: '#F5A623',
-      },
-    ],
-  },
-  {
-    date: '11/05/2026',
-    total: 1,
-    subjects: [
-      {
-        name: 'Internet vạn vật (IoT)',
-        nameToDisplay: 'Internet vạn vật (IoT)',
-        color: '#4A90E2',
-      },
-    ],
-  },
-  {
-    date: '23/05/2026',
-    total: 1,
-    subjects: [
-      {
-        name: 'Xử lý ảnh và thị giác máy tính',
-        nameToDisplay: 'Xử lý ảnh và thị giác máy tính',
-        color: '#4A90E2',
-      },
-    ],
-  },
-  {
-    date: '22/05/2026',
-    total: 1,
-    subjects: [
-      {
-        name: 'Trí tuệ nhân tạo',
-        nameToDisplay: 'Trí tuệ nhân tạo',
-        color: '#F5A623',
-      },
-    ],
-  },
-  {
-    date: '21/05/2026',
-    total: 1,
-    subjects: [
-      {
-        name: 'Lịch sử Đảng cộng sản Việt Nam',
-        nameToDisplay: 'Lịch sử Đảng cộng sản Việt Nam',
-        color: '#F5A623',
-      },
-    ],
-  },
-  {
-    date: '05/05/2026',
-    total: 1,
-    subjects: [
-      {
-        name: 'Internet vạn vật (IoT)',
-        nameToDisplay: 'Internet vạn vật (IoT)',
-        color: '#D0021B',
-      },
-    ],
-  },
-  {
-    date: '04/05/2026',
-    total: 1,
-    subjects: [
-      {
-        name: 'Kiểm chứng phần mềm',
-        nameToDisplay: 'Kiểm chứng phần mềm',
-        color: '#F5A623',
-      },
-    ],
-  },
-  {
-    date: '18/05/2026',
-    total: 1,
-    subjects: [
-      {
-        name: 'Internet vạn vật (IoT)',
-        nameToDisplay: 'Internet vạn vật (IoT)',
-        color: '#4A90E2',
-      },
-    ],
-  },
-  {
-    date: '16/05/2026',
-    total: 1,
-    subjects: [
-      {
-        name: 'Xử lý ảnh và thị giác máy tính',
-        nameToDisplay: 'Xử lý ảnh và thị giác máy tính',
-        color: '#4A90E2',
-      },
-    ],
-  },
-];
-
-const scheduleWeek = [
-  {
-    id: 1322856,
-    ngayBatDauHoc: '28/05/2026',
-    tenPhong: 'H002 - CS3 (P.Trung Mỹ Tây, TP.HCM)',
-    thu: 5,
-    tuTiet: 7,
-    denTiet: 9,
-    maLopHocPhan: '010100510809',
-    maMonHoc: '005108',
-    tenMonHoc: 'Lịch sử Đảng cộng sản Việt Nam',
-    giangVien: null,
-    isTamNgung: false,
-    tuGio: '12:10',
-    denGio: '14:40',
-    ghiChu: '',
-    image: 'CS3',
-    nameToDisplay: null,
-    dateToDisplay: null,
-    timeToDisplay: '12:10 - 14:40',
-    coSoToDisplay: 'Cơ sở 3',
-    haveOutlineFile: true,
-  },
-  {
-    id: 1320574,
-    ngayBatDauHoc: '29/05/2026',
-    tenPhong: 'H105 - CS3 (P.Trung Mỹ Tây, TP.HCM)',
-    thu: 6,
-    tuTiet: 7,
-    denTiet: 9,
-    maLopHocPhan: '010112103312',
-    maMonHoc: '121033',
-    tenMonHoc: 'Trí tuệ nhân tạo',
-    giangVien: null,
-    isTamNgung: false,
-    tuGio: '12:10',
-    denGio: '14:40',
-    ghiChu: '',
-    image: 'CS3',
-    nameToDisplay: null,
-    dateToDisplay: null,
-    timeToDisplay: '12:10 - 14:40',
-    coSoToDisplay: 'Cơ sở 3',
-    haveOutlineFile: false,
-    outLineDescription: null,
-  },
-  {
-    id: 1316178,
-    ngayBatDauHoc: '30/05/2026',
-    tenPhong: 'H107 - CS3 (P.Trung Mỹ Tây, TP.HCM)',
-    thu: 7,
-    tuTiet: 1,
-    denTiet: 3,
-    maLopHocPhan: '010112103605',
-    maMonHoc: '121036',
-    tenMonHoc: 'Xử lý ảnh và thị giác máy tính',
-    giangVien: null,
-    isTamNgung: false,
-    tuGio: '06:45',
-    denGio: '09:15',
-    ghiChu: '',
-    image: 'CS3',
-    nameToDisplay: null,
-    dateToDisplay: null,
-    timeToDisplay: '06:45 - 09:15',
-    coSoToDisplay: 'Cơ sở 3',
-    haveOutlineFile: false,
-    outLineDescription: null,
-  },
-  {
-    id: 1316178,
-    ngayBatDauHoc: '30/05/2026',
-    tenPhong: 'H107 - CS3 (P.Trung Mỹ Tây, TP.HCM)',
-    thu: 7,
-    tuTiet: 1,
-    denTiet: 3,
-    maLopHocPhan: '010112103605',
-    maMonHoc: '121036',
-    tenMonHoc: 'Xử lý ảnh và thị giác máy tính',
-    giangVien: null,
-    isTamNgung: false,
-    tuGio: '09:30',
-    denGio: '11:30',
-    ghiChu: '',
-    image: 'CS3',
-    nameToDisplay: null,
-    dateToDisplay: null,
-    timeToDisplay: '09:30 - 11:30',
-    coSoToDisplay: 'Cơ sở 3',
-    haveOutlineFile: false,
-    outLineDescription: null,
-  },
-  {
-    id: 1316178,
-    ngayBatDauHoc: '30/05/2026',
-    tenPhong: 'H107 - CS3 (P.Trung Mỹ Tây, TP.HCM)',
-    thu: 7,
-    tuTiet: 1,
-    denTiet: 3,
-    maLopHocPhan: '010112103605',
-    maMonHoc: '121036',
-    tenMonHoc: 'Xử lý ảnh và thị giác máy tính',
-    giangVien: null,
-    isTamNgung: false,
-    tuGio: '12:10',
-    denGio: '14:40',
-    ghiChu: '',
-    image: 'CS3',
-    nameToDisplay: null,
-    dateToDisplay: null,
-    timeToDisplay: '12:10 - 14:4',
-    coSoToDisplay: 'Cơ sở 3',
-    haveOutlineFile: false,
-    outLineDescription: null,
-  },
-  {
-    id: 1316178,
-    ngayBatDauHoc: '30/05/2026',
-    tenPhong: 'H107 - CS3 (P.Trung Mỹ Tây, TP.HCM)',
-    thu: 7,
-    tuTiet: 1,
-    denTiet: 3,
-    maLopHocPhan: '010112103605',
-    maMonHoc: '121036',
-    tenMonHoc: 'Xử lý ảnh và thị giác máy tính',
-    giangVien: null,
-    isTamNgung: false,
-    tuGio: '14:50',
-    denGio: '15:20',
-    ghiChu: '',
-    image: 'CS3',
-    nameToDisplay: null,
-    dateToDisplay: null,
-    timeToDisplay: '14:50 - 15:20',
-    coSoToDisplay: 'Cơ sở 3',
-    haveOutlineFile: false,
-    outLineDescription: null,
-  },
-];
+let scheduleMonth = [];
+let scheduleWeek = [];
+// Cache
+const monthCache = new Map();
+const weekCache = new Map();
 
 // Header
 const monthYearElement = document.getElementById('monthYear');
@@ -318,6 +49,156 @@ function getActiveView() {
 
 function formatDate(day, month, year) {
   return `${String(day).padStart(2, '0')}/` + `${String(month).padStart(2, '0')}/` + year;
+}
+
+async function goToDayView(dateObj) {
+  currentDate = new Date(dateObj);
+
+  scheduleWeek = await getWeekData(currentDate);
+  prefetchWeek();
+  // bỏ active khỏi tất cả section và button
+  document.querySelectorAll('.calendar section').forEach((s) => s.classList.remove('active'));
+  document.querySelectorAll('.header__view-button').forEach((b) => b.classList.remove('active'));
+
+  // active dayView
+  document.getElementById('dayView').classList.add('active');
+  dayBtn.classList.add('active');
+
+  renderDayView(currentDate);
+}
+
+function formatApiDate(dateObj) {
+  const y = dateObj.getFullYear();
+  const m = String(dateObj.getMonth() + 1).padStart(2, '0');
+  const d = String(dateObj.getDate()).padStart(2, '0');
+
+  return `${y}-${m}-${d}`;
+}
+
+function getMonthKey(date) {
+  return `${date.getFullYear()}-${date.getMonth() + 1}`;
+}
+
+function getWeekKey(date) {
+  const d = new Date(date);
+
+  let day = d.getDay();
+  if (day === 0) day = 7;
+
+  d.setDate(d.getDate() - day + 1);
+
+  return formatApiDate(d);
+}
+
+// Call data
+async function getMonthData(date) {
+  const key = getMonthKey(date);
+
+  if (monthCache.has(key)) {
+    console.log(`%c[CACHE] MONTH ${key}`, 'color:pink;font-weight:bold');
+    return monthCache.get(key);
+  }
+  console.log(`%c[API CALL] MONTH ${key}`, 'color:orange;font-weight:bold');
+
+  const start = performance.now();
+
+  const res = await window.electronAPI.getMonthSchedule(formatApiDate(date));
+
+  const elapsed = Math.round(performance.now() - start);
+
+  console.log(`%c[API DONE] MONTH ${key} (${elapsed}ms)`, 'color:green;font-weight:bold');
+
+  const data = res.body || [];
+
+  monthCache.set(key, data);
+
+  return data;
+}
+
+async function getWeekData(date) {
+  const key = getWeekKey(date);
+
+  if (weekCache.has(key)) {
+    console.log(`%c[CACHE] WEEK ${key}`, 'color:pink;font-weight:bold');
+
+    return weekCache.get(key);
+  }
+
+  console.log(`%c[API CALL] WEEK ${key}`, 'color:orange;font-weight:bold');
+
+  const start = performance.now();
+
+  const res = await window.electronAPI.getWeekSchedule(formatApiDate(date));
+
+  const elapsed = Math.round(performance.now() - start);
+
+  console.log(`%c[API DONE] WEEK ${key} (${elapsed}ms)`, 'color:green;font-weight:bold');
+
+  const data = res.body || [];
+
+  weekCache.set(key, data);
+
+  return data;
+}
+
+async function prefetchMonth() {
+  console.log(`%cCall prefetchMonth`, 'font-weight:bold;font-style:italic');
+  const prev = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1);
+
+  const next = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1);
+
+  getMonthData(prev).catch(() => {});
+  getMonthData(next).catch(() => {});
+}
+
+async function prefetchWeek() {
+  const prev = new Date(currentDate);
+  prev.setDate(prev.getDate() - 7);
+
+  const next = new Date(currentDate);
+  next.setDate(next.getDate() + 7);
+
+  getWeekData(prev).catch(() => {});
+  getWeekData(next).catch(() => {});
+}
+
+// Load Data
+async function loadSchedule() {
+  console.log(`%cCall loadSchedule`, 'font-weight:bold;font-style:italic');
+
+  await window.electronAPI.login();
+
+  scheduleMonth = await getMonthData(currentDate);
+  prefetchMonth();
+  renderMonthView();
+}
+
+let lastMonthKey = null;
+async function reloadSchedule() {
+  try {
+    const activeView = getActiveView();
+
+    if (activeView === monthView) {
+      scheduleMonth = await getMonthData(currentDate);
+
+      prefetchMonth();
+    }
+
+    if (activeView === weekView || activeView === dayView) {
+      scheduleWeek = await getWeekData(currentDate);
+
+      prefetchWeek();
+      const monthKey = getMonthKey(currentDate);
+      if (monthKey != lastMonthKey) {
+        lastMonthKey = monthKey;
+        getMonthData(currentDate).catch(() => {});
+      }
+    }
+    console.log(`[RELOAD] ${activeView.id} | ${formatApiDate(currentDate)}`);
+    handleActiveView();
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 // Render Month View
@@ -362,7 +243,6 @@ function renderMonthView() {
     const subjects = scheduleItem?.subjects || [];
     const count = subjects.length;
     let dotHTML = ``;
-
     if (count > 0 && count <= 3) {
       dotHTML = `
         <div class="dot-group">
@@ -380,7 +260,6 @@ function renderMonthView() {
         <span class="dot-more">+${count}</span>
       `;
     }
-
     datesHTML += `
       <button
         class="
@@ -388,6 +267,7 @@ function renderMonthView() {
           ${activeClass}
           ${hasScheduleClass}
         "
+            data-date="${formatDate(i, currentMonth + 1, currentYear)}"
       >
         <span class="date-number">
           ${i}
@@ -410,14 +290,23 @@ function renderMonthView() {
   }
 
   monthViewDates.innerHTML = datesHTML;
+
+  monthViewDates.querySelectorAll('.month-view__date:not(.inactive)').forEach((btn) => {
+    const dateString = btn.dataset.date;
+    const [day, month, year] = dateString.split('/');
+
+    const date = new Date(year, month - 1, day);
+
+    // console.log(date);
+    btn.addEventListener('click', async () => {
+      await goToDayView(date);
+    });
+  });
 }
 
 // Render Week View
 function renderWeekView() {
   const weekdays = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'];
-
-  const currentYear = currentDate.getFullYear();
-  const currentMonth = currentDate.getMonth();
 
   const firstDayOfCurrentWeek = new Date(currentDate);
   let datesHTML = '';
@@ -433,7 +322,9 @@ function renderWeekView() {
   lastDayOfCurrentWeek.setDate(firstDayOfCurrentWeek.getDate() + 6);
   // console.log(lastDayOfCurrentWeek);
 
-  const monthYearString = `${firstDayOfCurrentWeek.getDate()}/${currentMonth + 1} - ${lastDayOfCurrentWeek.getDate()}/${currentMonth + 1}`;
+  const monthYearString =
+    `${firstDayOfCurrentWeek.getDate()}/${firstDayOfCurrentWeek.getMonth() + 1} - ` +
+    `${lastDayOfCurrentWeek.getDate()}/${lastDayOfCurrentWeek.getMonth() + 1}`;
   monthYearElement.textContent = monthYearString;
 
   const scheduleMap = {};
@@ -500,27 +391,28 @@ function renderWeekView() {
   weekViewDates.innerHTML = datesHTML;
 }
 
-function renderDayView() {
+function renderDayView(targetDateObj = currentDate) {
   const weekdays = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'];
   const shifts = [
     { id: 1, label: 'Ca 1', time: '06:45 - 09:15', group: 'morning', start: '06:45', end: '09:15' },
     { id: 2, label: 'Ca 2', time: '09:25 - 11:55', group: 'morning', start: '09:25', end: '11:55' },
     { id: 3, label: 'Ca 3', time: '12:10 - 14:40', group: 'afternoon', start: '12:10', end: '14:40' },
-    { id: 4, label: 'Ca 4', time: '14:50 - 15:20', group: 'afternoon', start: '14:50', end: '15:20' },
+    { id: 4, label: 'Ca 4', time: '14:50 - 17:20', group: 'afternoon', start: '14:50', end: '17:20' },
     { id: 5, label: 'Ca 5', time: '17:30 - 20:00', group: 'evening', start: '17:30', end: '20:00' },
   ];
 
-  const currentYear = currentDate.getFullYear();
-  const currentMonth = currentDate.getMonth();
-  const currentDay = currentDate.getDate();
-  const getDay = currentDate.getDay();
+  const currentYear = targetDateObj.getFullYear();
+  const currentMonth = targetDateObj.getMonth();
+  const currentDay = targetDateObj.getDate();
+  const getDay = targetDateObj.getDay();
   const targetDate = formatDate(currentDay, currentMonth + 1, currentYear);
   const monthYearString = `${weekdays[getDay]}, ${targetDate}`;
   monthYearElement.textContent = monthYearString;
 
   const data = scheduleWeek.filter((x) => x.ngayBatDauHoc === targetDate);
+  const now = new Date();
 
-  const currentMinutes = currentDate.getHours() * 60 + currentDate.getMinutes();
+  const currentMinutes = now.getHours() * 60 + now.getMinutes();
 
   function toMinutes(timeStr) {
     if (!timeStr) return null;
@@ -532,8 +424,6 @@ function renderDayView() {
   data.forEach((item) => {
     shiftMap[item.tuGio] = item;
   });
-
-  const isValidShift = (shift) => !!shiftMap[shift.start];
 
   const candidates = shifts
     .map((shift, index) => {
@@ -561,7 +451,7 @@ function renderDayView() {
     }
   }
 
-  console.log(activeIndex);
+  // console.log(activeIndex);
 
   const renderShift = (shift, index) => {
     const match = shiftMap[shift.start];
@@ -585,7 +475,7 @@ function renderDayView() {
               </div>
               ${match.ghiChu ? `<div class="schedule-item__notes">${match.ghiChu}</div>` : ''}
             `
-            : ''
+            : 'Không có môn học!'
         }
       </div>
     `;
@@ -653,7 +543,7 @@ prevBtn.addEventListener('click', () => {
   const activeView = getActiveView();
 
   if (activeView === monthView) {
-    currentDate.setMonth(currentDate.getMonth() - 1);
+    currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1);
   }
 
   if (activeView === weekView) {
@@ -663,14 +553,14 @@ prevBtn.addEventListener('click', () => {
   if (activeView === dayView) {
     currentDate.setDate(currentDate.getDate() - 1);
   }
-  handleActiveView();
+  reloadSchedule();
 });
 
 nextBtn.addEventListener('click', () => {
   const activeView = getActiveView();
 
   if (activeView === monthView) {
-    currentDate.setMonth(currentDate.getMonth() + 1);
+    currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1);
   }
 
   if (activeView === weekView) {
@@ -680,21 +570,27 @@ nextBtn.addEventListener('click', () => {
   if (activeView === dayView) {
     currentDate.setDate(currentDate.getDate() + 1);
   }
-  handleActiveView();
+  reloadSchedule();
 });
 
 toDayBtn.addEventListener('click', () => {
   currentDate = new Date();
-  handleActiveView();
+  reloadSchedule();
 });
 
-monthBtn.addEventListener('click', () => {
+monthBtn.addEventListener('click', async () => {
+  scheduleMonth = await getMonthData(currentDate);
+  prefetchMonth();
   switchView('monthView', monthBtn);
 });
-weekBtn.addEventListener('click', () => {
+weekBtn.addEventListener('click', async () => {
+  scheduleWeek = await getWeekData(currentDate);
+  prefetchWeek();
   switchView('weekView', weekBtn);
 });
-dayBtn.addEventListener('click', () => {
+dayBtn.addEventListener('click', async () => {
+  scheduleWeek = await getWeekData(currentDate);
+  prefetchWeek();
   switchView('dayView', dayBtn);
 });
 
@@ -764,7 +660,7 @@ function handleActiveView() {
   }
 
   if (activeView === dayView) {
-    renderDayView();
+    renderDayView(currentDate);
     requestAnimationFrame(() => {
       scrollToActive('day');
     });
@@ -772,4 +668,6 @@ function handleActiveView() {
 }
 
 // Init
-handleActiveView();
+(async () => {
+  await loadSchedule();
+})();

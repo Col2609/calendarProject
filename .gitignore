@@ -1,6 +1,2 @@
 node_modules/
-backend/config.py
-backend/.token
-backend/debug_response.json
-__pycache__/
-*.pyc
+.env

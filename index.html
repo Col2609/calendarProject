@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calendar Project</title>
 
-    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/Font-end/css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -47,17 +47,17 @@
 
       <!-- View Switcher -->
       <div class="header__view-switcher">
-        <button class="header__view-button" id="monthBtn">Month</button>
+        <button class="header__view-button active" id="monthBtn">Month</button>
 
         <button class="header__view-button" id="weekBtn">Week</button>
 
-        <button class="header__view-button active" id="dayBtn">Day</button>
+        <button class="header__view-button" id="dayBtn">Day</button>
       </div>
     </header>
 
     <!-- Body Calendar -->
     <main class="calendar">
-      <section class="month-view" id="monthView">
+      <section class="month-view active" id="monthView">
         <div class="month-view__weekdays">
           <div class="month-view__weekday">T2</div>
           <div class="month-view__weekday">T3</div>
@@ -75,7 +75,7 @@
         <div class="week-view__list" id="weekViewList"></div>
       </section>
 
-      <section class="day-view active" id="dayView">
+      <section class="day-view" id="dayView">
         <div class="day-view__list" id="dayViewList"></div>
       </section>
     </main>
@@ -92,5 +92,5 @@
     </footer>
   </body>
 
-  <script src="src/js/index.js"></script>
+  <script src="src/Font-end/js/index.js"></script>
 </html>
